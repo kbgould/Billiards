@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4F3F0B7A-7EDC-4AFD-92C2-CDFDE823A463}</ProjectGuid>
+    <RootNamespace>Billiards</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Program Files\freeglut\include;C:\Program Files\Devil\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files\freeglut\lib;C:\Program Files\Devil\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>"C:\Program Files\Devil\lib\DevIL.lib";"C:\Program Files\Devil\lib\ILU.lib";"C:\Program Files\Devil\lib\ILUT.lib";%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Program Files\freeglut\include;C:\Program Files\Devil\include;C:\Program Files\irrKlang-1.3.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files\freeglut\lib;C:\Program Files\Devil\lib;C:\Program Files\irrKlang-1.3.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>"C:\Program Files\Devil\lib\DevIL.lib";"C:\Program Files\Devil\lib\ILU.lib";"C:\Program Files\Devil\lib\ILUT.lib";%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Billiards.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Billiards.h" />
+    <ClInclude Include="BilliardsTexturing.h" />
+    <ClInclude Include="sounds.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Desktop\textures\1.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\10.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\11.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\12.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\13.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\14.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\15.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\2.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\3.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\4.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\5.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\6.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\7.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\8.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\9.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\bumper.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\cue.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\pocket.png" />
+    <None Include="..\..\..\..\..\Desktop\textures\pocket_black.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\table_blackpockets.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\table_nopockets.bmp" />
+    <None Include="..\..\..\..\..\Desktop\textures\table_pockets.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

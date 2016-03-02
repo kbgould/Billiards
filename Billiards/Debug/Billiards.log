@@ -1,0 +1,26 @@
+﻿Build started 5/8/2011 10:55:59 PM.
+     1>Project "C:\Users\Keith\Documents\Visual Studio 2010\Projects\Billiards\Billiards\Billiards.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Billiards.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\freeglut\include" /I"C:\Program Files\Devil\include" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Billiards.cpp
+         Billiards.cpp
+     1>c:\users\keith\documents\visual studio 2010\projects\billiards\billiards\billiards.cpp(388): warning C4101: 'num' : unreferenced local variable
+     1>c:\users\keith\documents\visual studio 2010\projects\billiards\billiards\billiards.cpp(388): warning C4101: 'offset' : unreferenced local variable
+     1>c:\users\keith\documents\visual studio 2010\projects\billiards\billiards\billiards.cpp(1984): warning C4244: 'argument' : conversion from 'const double' to 'GLfloat', possible loss of data
+     1>c:\users\keith\documents\visual studio 2010\projects\billiards\billiards\billiards.cpp(1984): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\keith\documents\visual studio 2010\projects\billiards\billiards\billiards.cpp(1984): warning C4244: 'argument' : conversion from 'const double' to 'GLfloat', possible loss of data
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Keith\Documents\Visual Studio 2010\Projects\Billiards\Debug\Billiards.exe" /NOLOGO /LIBPATH:"C:\Program Files\freeglut\lib" /LIBPATH:"C:\Program Files\Devil\lib" "C:\Program Files\Devil\lib\DevIL.lib" "C:\Program Files\Devil\lib\ILU.lib" "C:\Program Files\Devil\lib\ILUT.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Billiards.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Keith\Documents\Visual Studio 2010\Projects\Billiards\Debug\Billiards.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Keith\Documents\Visual Studio 2010\Projects\Billiards\Debug\Billiards.lib" /MACHINE:X86 Debug\Billiards.obj
+         LINK : C:\Users\Keith\Documents\Visual Studio 2010\Projects\Billiards\Debug\Billiards.exe not found or not built by the last incremental link; performing full link
+         Billiards.vcxproj -> C:\Users\Keith\Documents\Visual Studio 2010\Projects\Billiards\Debug\Billiards.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Keith\Documents\Visual Studio 2010\Projects\Billiards\Debug\Billiards.exe;#1" /manifest Debug\Billiards.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Billiards.unsuccessfulbuild".
+         Touching "Debug\Billiards.lastbuildstate".
+     1>Done Building Project "C:\Users\Keith\Documents\Visual Studio 2010\Projects\Billiards\Billiards\Billiards.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.66
